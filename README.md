@@ -50,31 +50,30 @@ The goals of the study would be answered by examining the statistical significan
 
 Data for this study was collected from two primary sources to create a merged dataset
 linking pre-match sentiment with in-game performance:
-1. Soccer Performance Data: Match logs for Manchester United's 2023-2024 season
+- Soccer Performance Data: Match logs for Manchester United's 2023-2024 season
 were sourced from FBref.com. For each match, the key variables extracted were: Date,
 Opponent, Venue (Home/Away), Result (Win/Loss/Draw), Goals For (GF), Goals
 Against (GA), and the crucial performance metric, Expected Goals (xG).
-2. Fan Sentiment Data: Using the **Twitter (X) API, tweets containing the handles
+- Fan Sentiment Data: Using the **Twitter (X) API, tweets containing the handles
 "@ManUtd" OR the hashtag "#MUFC" were collected from the 24-hour window
 immediately preceding each match's kickoff.
 
 
 The raw data were processed to create the final explanatory variables:
-avg_sentiment (Continuous): The compound sentiment score for each tweet, calculated
+- avg_sentiment (Continuous): The compound sentiment score for each tweet, calculated
 using the VADER model, was averaged across all tweets for a given match, resulting in
 a single value between +1 and -1.
-opponent_Strength (Continuous): A derived variable representing the quality of the
+- opponent_Strength (Continuous): A derived variable representing the quality of the
 opposition, quantified by the opponent's final points total in the league table.
-venue (Categorical): A binary variable indicating whether the match was played at
+- venue (Categorical): A binary variable indicating whether the match was played at
 Home (1) or Away (0).
+
+
 I also proposed the following response variables:
-win (Binary Response): The match result was converted into a binary outcome where a
+- win (Binary Response): The match result was converted into a binary outcome where a
 Win = 1 and a Loss or Draw = 0.
-xG (Continuous Response): The team's Expected Goals for the match, representing the
+- xG (Continuous Response): The team's Expected Goals for the match, representing the
 quality of attacking chances created.
 
-
-in both models. This approach allowed for an effective investigation into whether online
-fan sentiment holds a significant association with soccer performance metrics.
 
 
