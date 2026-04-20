@@ -25,3 +25,28 @@ to +1 (most positive), which was then averaged per match. The average of these s
 for all tweets in the 24 hours preceding a match served as the primary explanatory
 variable.
 
+
+The analysis plan was designed to answer the research question through a
+two-pronged statistical approach:
+1. A logistic regression model was used to test if pre-match sentiment could predict the
+binary outcome of a match (Win/Loss), while controlling for opponent strength and
+venue (home/away).
+log(odds of Win) = β0 + β1
+(Avg_Sentiment) + β1
+(Opponent_Strength)+ β3
+(Venue)
+2. A multiple linear regression model was used to test for a relationship between
+pre-match sentiment and the continuous performance metric, Expected Goals (xG),
+again controlling for the same confounding variables such as home field advantage and
+opponent level.
+xG = β0 + β1
+(Avg_Sentiment) + β1
+(Opponent_Strength)+ β3
+(Venue) + ϵ
+where ϵ∼N(0, σ^2)
+The goals of the study would be answered by examining the statistical significance
+(using a threshold of p < 0.05) and the confidence intervals of the sentiment coefficient
+in both models. This approach allowed for an effective investigation into whether online
+fan sentiment holds a significant association with soccer performance metrics.
+
+
