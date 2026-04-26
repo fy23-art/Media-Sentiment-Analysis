@@ -3,7 +3,7 @@
 ## Model Details
 - **Type:** Logistic regression (Win) + Linear regression (xG)
 - **Date:** April 2026
-- **Developer:** [Your Name], STAT410 Course Project
+- **Developer:** Freya
 
 ## Intended Use
 - **Primary:** Auditing bias in sports sentiment models
@@ -16,12 +16,7 @@
 
 ## Metrics
 - **Logistic:** Coefficients, odds ratios, p-values, Chi-squared test
-- **Linear:** R² = [your value], adj R² = [your value], residual diagnostics
-
-## Training Data
-- **Source:** [You must fill this in]
-- **Size:** n = [nrow(team_data)]
-- **Temporal range:** [fill in]
+- **Linear:** R², adj R², residual diagnostics
 
 ## Ethical Evaluation (ACM Code 1.2, 1.3)
 - The model does not directly cause harm, but could mislead if published without: (1) data provenance, (2) uncertainty quantification, (3) acknowledgment of sentiment sampling bias.
