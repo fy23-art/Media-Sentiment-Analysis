@@ -28,25 +28,6 @@ This project applies the **ACM Code of Ethics** (Principles 1.2 Avoid Harm, 1.3 
 | Students | A case study in statistical ethics + regression modeling |
 | Bettors (unintended) | A cautionary tool — sentiment alone is insufficient for betting decisions |
 
-### Repository Structure
-fairplay-sentiment-audit/
-├── README.md # You are here
-├── code/
-│ └── sentiment_analysis.R # Full R code (logistic + linear regression)
-├── data/
-│ └── README.md # Data provenance and privacy statement
-├── docs/
-│ ├── MODEL_CARD.md # Complete model documentation
-│ ├── ETHICS_STATEMENT.md # ACM Code application (300+ words)
-│ └── USER_GUIDE.md # How to run the analysis
-├── outputs/
-│ ├── histogram_xG.png # Distribution of Expected Goals
-│ ├── sentiment_vs_xG.png # Correlation plot
-│ ├── logistic_summary.txt # Odds ratios and coefficients
-│ ├── lm_diagnostics.png # 2x2 diagnostic plots (Q-Q, residuals)
-│ └── prediction_plot.png # Final sentiment-xG plot with 95% CI
-└── .gitignore
-
 
 ### Key Findings (From Your Analysis)
 
@@ -81,7 +62,7 @@ fairplay-sentiment-audit/
 | Durbin-Watson (autocorrelation) | DW = 1.796 | 0.312 | ✅ Pass |
 | VIF (multicollinearity) | All < 2.2 | — | ✅ Pass |
 
-### Ethical Limitations (Must Read)
+### Ethical Limitations
 
 This audit does **not** claim:
 
