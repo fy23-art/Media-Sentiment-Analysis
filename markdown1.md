@@ -1,7 +1,5 @@
 # FairPlay: Auditing Sentiment Bias in Sports Analytics
 
-## A STAT410 Ethical AI Project
-
 ### Project Overview
 
 This repository contains a complete statistical analysis investigating whether pre-match social media sentiment predicts soccer team performance. The analysis uses **Manchester United's 2023-24 season** data, combining:
